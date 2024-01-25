@@ -1,0 +1,18 @@
+Apresentação
+
+Bem-vindo!
+
+É  um  prazer  tê-lo  como  aluno  do  nosso  curso  online Conhecendo  o  R: Análise  de  Dados  na  Prática. Este
+curso foi  idealizado  para  você  que almeja ingressar no mercado de análise de dados utilizando os recursos da R, uma
+das linguagens mais populares em ciência de dados. Você irá conhecer os conceitos básicos de análise de dados e da
+linguagem R, e aprenderá a importar, manipular e visualizar resultados dos seus dados. Bom aprendizado!
+
+Como estudar?
+
+Este curso conta com:
+
+Videoaulas  sobre  os  assuntos  que  você  precisa  saber  neste curso de R.
+
+Exercícios para você pôr à prova o que aprendeu.
+
+Material de apoio para você testar os exemplos das videoaulas.
