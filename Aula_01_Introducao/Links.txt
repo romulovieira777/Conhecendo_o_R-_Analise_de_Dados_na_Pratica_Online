@@ -1,0 +1,5 @@
+R
+https://www.r-project.org/
+
+R Studio
+https://posit.co/downloads/
