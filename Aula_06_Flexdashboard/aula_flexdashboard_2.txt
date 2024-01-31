@@ -1,0 +1,73 @@
+---
+title: "Exemplo flexdashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    #vertical_layout: fill
+    social: menu
+    source_code: embed
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(ggplot2)
+library(plotly)
+
+# Quantidade de alunos em cada curso de faculdade #
+exemplo <- data.frame("nome" = c("Joana", "Maria", "Joao", "Pedro", "Jose"), 
+                      "idade" = c(21, 25, 28, 34, 18), 
+                      "qtd_livros" = c(5, 1, 2, 1, 3),
+                      "faculdade" = c("Engenharia", "Engenharia", "Direito", "Enfermagem", "Engenharia"), 
+                      stringsAsFactors = FALSE)
+mtcars$cyl <- as.factor(mtcars$cyl)
+```
+
+graficos_ggplot
+=======================================================================
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+ggplot(exemplo, aes(x = faculdade, fill = faculdade)) +
+  geom_bar(stat = "count") +
+  xlab("Cursos") +
+  ylab("Quantidade total de alunos") #+ guides(fill=FALSE)
+```
+
+### Chart B
+
+```{r}
+ggplot(mtcars, aes(x=wt, y=mpg, shape=cyl, color=cyl)) +
+  geom_point() +
+  labs(title="Gráfico de pontos") +
+  scale_color_brewer(palette="Dark2")
+```
+
+### Chart C
+
+```{r}
+ggplot(exemplo, aes(x="", fill=faculdade)) +
+  geom_bar(stat="count", width=1) +
+  coord_polar("y", start=0)
+```
+
+graficos_sem_ggplot
+=======================================================================
+### Chart D
+
+```{r}
+serie_temporal <- data.frame("ano" = c("2014", "2015", "2016", "2017", "2018"), 
+                             "media_temperatura" = c(25, 19, 35, 40, 20), 
+                             stringsAsFactors = FALSE)
+
+plot(y=serie_temporal$media_temperatura, 
+     x= serie_temporal$ano, 
+     type = "o", 
+     col = "blue", 
+     xlab = "Mês", 
+     ylab = "Temperatura",
+     main = "Gráfico de Linha")
+```
