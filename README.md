@@ -8,5 +8,6 @@
 - [Aula 03 - Visualização](https://github.com/romulovieira777/Conhecendo_o_R_Analise_de_Dados_na_Pratica_Online/tree/main/Aula_03_Visualizacao)
 - [Aula 04 - Pacote GGPLOT](https://github.com/romulovieira777/Conhecendo_o_R_Analise_de_Dados_na_Pratica_Online/tree/main/Aula_04_Pacote_GGPLOT)
 - [Aula 05 - R Markdown](https://github.com/romulovieira777/Conhecendo_o_R_Analise_de_Dados_na_Pratica_Online/tree/main/Aula_05_R_Markdown)
+- [Aula 06 - Flexdashboard]()
 
 Link para o curso: [Impacta](https://www.impacta.com.br/cursos/conhecendo-o-r-analise-de-dados-na-pratica-online)
